@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "NODE_ENV=development nodemon backend/server.js",
     "start": "NODE_ENV=production node backend/server.js",
-    "vercel-build": "mkdir -p public && cp -r frontend/* public"
+    "vercel-build": "mkdir -p public && cp -r frontend/src/* public && npm install && npm run build && mv build/* public"
   },
   "type": "module",
   "keywords": [],
