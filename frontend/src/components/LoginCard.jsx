@@ -30,7 +30,9 @@ export default function LoginCard() {
     username: "",
     password: "",
   });
+
   const showToast = useShowToast();
+
   const handleLogin = async () => {
     setLoading(true);
     try {
@@ -54,6 +56,7 @@ export default function LoginCard() {
       setLoading(false);
     }
   };
+
   return (
     <Flex align={"center"} justify={"center"}>
       <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
@@ -77,6 +80,7 @@ export default function LoginCard() {
               <FormLabel>Username</FormLabel>
               <Input
                 type="text"
+                placeholder="Enter username"
                 value={inputs.username}
                 onChange={(e) =>
                   setInputs((inputs) => ({
@@ -91,6 +95,7 @@ export default function LoginCard() {
               <InputGroup>
                 <Input
                   type={showPassword ? "text" : "password"}
+                  placeholder="Enter password"
                   value={inputs.password}
                   onChange={(e) =>
                     setInputs((inputs) => ({
@@ -126,6 +131,29 @@ export default function LoginCard() {
                 Login
               </Button>
             </Stack>
+
+            {/* Demo Credentials Section */}
+            <Box
+              mt={4}
+              p={3}
+              rounded="md"
+              bg={useColorModeValue("gray.100", "gray.800")}
+              border="1px solid"
+              borderColor={useColorModeValue("gray.300", "gray.600")}
+              textAlign="center"
+              fontSize="sm"
+              fontWeight="medium"
+              color={useColorModeValue("gray.800", "gray.200")}
+            >
+              <Text>Demo Account</Text>
+              <Text>
+                Username: <b>Demo</b>
+              </Text>
+              <Text>
+                Password: <b>DemoPass@123</b>
+              </Text>
+            </Box>
+
             <Stack pt={6}>
               <Text align={"center"}>
                 Don&apos;t have an account?{" "}
