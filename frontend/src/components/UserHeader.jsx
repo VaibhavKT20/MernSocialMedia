@@ -94,7 +94,7 @@ const UserHeader = ({ user }) => {
           <Box className="icon-container">
             <img
               src="../public/onlyLogoPng.png"
-              alt="My Logo"
+              alt="Logo"
               style={{
                 width: "180px",
                 height: "auto",
