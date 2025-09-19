@@ -93,7 +93,7 @@ const UserHeader = ({ user }) => {
         <Flex>
           <Box className="icon-container">
             <img
-              src="../dist/onlyLogoPng.png"
+              src="../public/onlyLogoPng.png"
               alt="Logo"
               style={{
                 width: "180px",
