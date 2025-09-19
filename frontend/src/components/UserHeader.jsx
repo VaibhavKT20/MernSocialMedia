@@ -3,7 +3,6 @@ import { Box, Flex, Link, Text, VStack } from "@chakra-ui/layout";
 import { Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/menu";
 import { Portal } from "@chakra-ui/portal";
 import { Button, useToast } from "@chakra-ui/react";
-import { BsInstagram } from "react-icons/bs";
 import { CgMoreO } from "react-icons/cg";
 import { useRecoilValue } from "recoil";
 import userAtom from "../atoms/userAtom";
@@ -93,7 +92,7 @@ const UserHeader = ({ user }) => {
         <Flex>
           <Box className="icon-container">
             <img
-              src="../public/onlyLogoPng.png"
+              src="/onlyLogoPng.png"
               alt="Logo"
               style={{
                 width: "180px",
