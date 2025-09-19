@@ -92,7 +92,17 @@ const UserHeader = ({ user }) => {
         </Flex>
         <Flex>
           <Box className="icon-container">
-            <BsInstagram size={24} cursor={"pointer"} />
+            <img
+              src="../dist/onlyLogoPng.png"
+              alt="Logo"
+              style={{
+                width: "180px",
+                height: "auto",
+                cursor: "pointer",
+                objectFit: "contain",
+                display: "block",
+              }}
+            />
           </Box>
           <Box className="icon-container">
             <Menu>
@@ -119,7 +129,7 @@ const UserHeader = ({ user }) => {
           pb="3"
           cursor={"pointer"}
         >
-          <Text fontWeight={"bold"}> Share</Text>
+          <Text fontWeight={"bold"}> Links</Text>
         </Flex>
         <Flex
           flex={1}
