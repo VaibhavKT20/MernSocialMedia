@@ -222,13 +222,13 @@ const getSuggestedUsers = async (req, res) => {
         },
       },
       {
-        $sample: { size: 10 },
+        $sample: { size: 30 },
       },
     ]);
     const filteredUsers = users.filter(
       (user) => !usersFollowedByYou.following.includes(user._id)
     );
-    const suggestedUsers = filteredUsers.slice(0, 4);
+    const suggestedUsers = filteredUsers.slice(0, 12);
 
     suggestedUsers.forEach((user) => (user.password = null));
 

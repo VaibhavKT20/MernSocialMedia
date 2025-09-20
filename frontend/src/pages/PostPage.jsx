@@ -29,6 +29,12 @@ const PostPage = () => {
   const navigate = useNavigate();
 
   const currentPost = posts[0];
+  const copyURL = () => {
+    const currentURL = window.location.href;
+    navigator.clipboard.writeText(currentURL).then(() => {
+      showToast("Success", "Profile link copied.", "success");
+    });
+  };
 
   useEffect(() => {
     const getPost = async () => {
@@ -134,7 +140,7 @@ const PostPage = () => {
           <Text fontSize={"2xl"}>👋</Text>
           <Text color={"gray.light"}>Get the app to like, reply and post.</Text>
         </Flex>
-        <Button>Get</Button>
+        <Button onClick={copyURL}>Get</Button>
       </Flex>
 
       <Divider my={4} />
