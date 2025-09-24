@@ -126,6 +126,7 @@ const Actions = ({ post }) => {
           role="img"
           viewBox="0 0 24 22"
           width="20"
+          cursor="pointer"
           onClick={handleLikeAndUnlike}
         >
           <path
@@ -143,6 +144,7 @@ const Actions = ({ post }) => {
           role="img"
           viewBox="0 0 24 24"
           width="20"
+          cursor="pointer"
           onClick={onOpen}
         >
           <title>Comment</title>
@@ -213,6 +215,7 @@ const RepostSVG = () => {
       role="img"
       viewBox="0 0 24 24"
       width="20"
+      cursor="pointer"
     >
       <title>Repost</title>
       <path
@@ -233,6 +236,7 @@ const ShareSVG = () => {
       role="img"
       viewBox="0 0 24 24"
       width="20"
+      cursor="pointer"
     >
       <title>Share</title>
       <line
